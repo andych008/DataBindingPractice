@@ -3,13 +3,13 @@
 *Read this in other languages: [English](01_mvvm.en.md).*
 
 
-
+##MVVM简介
 
 &emsp;&emsp;先谈一下我对MVVM、MVC、MVP等架构的理解，我认为它们都是在解决一个问题，那就是解耦M和V。
 
 
 
-&emsp;&emsp;对于MVC，先理解“数据流”该怎么处理，就可以更好地理解MVC。通常，数据流是这样的：M--->C---->V，但是这只是最简单的单向数据流。除了数据流，还有事件流，事件通常在V上面产生，同时会产生新的数据，这个时候数据会以反方向流动，即：V--->M。V直接操作M会使你的代码就开始变得混乱，因为这会使得V变得不再单纯，它不再只是负责显示。
+&emsp;&emsp;对于MVC，先理解“数据流”该怎么处理，就可以更好地理解MVC。通常，数据流是这样的：M--->C---->V，但是这只是最简单的单向数据流。除了数据流，还有事件流，事件通常在V上面产生，同时会产生新的数据，这个时候数据会以反方向流动，即：V--->M。V直接操作M，你的代码就开始变得混乱，因为这会使得V变得不再单纯，它不再只是负责显示。
 
 &emsp;&emsp;MVP直接跳过，用的人本来就不多。
 
@@ -25,4 +25,10 @@
 
 图片来源：[http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)
 
+##MVVM实践
+&emsp;&emsp;你把mvvm架构说得再好，如果不能用代码表现出来，那都是扯！那就看01_mvvm这个分支的代码吧。
+这个示例，要把inputBox中输入的内容打印到textview里。
 
+- `NoteVMData`中的content会绑定在`fragment_note.xml`中，当content的内容改变，会自动更新在界面上。
+- `NoteFragment`我认为它也是ViewModel这一层，主要用来绑定事件。
+- `NoteModel`中的print()模拟打印的功能。

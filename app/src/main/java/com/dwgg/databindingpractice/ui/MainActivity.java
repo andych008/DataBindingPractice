@@ -1,4 +1,4 @@
-package com.dwgg.databindingpractice;
+package com.dwgg.databindingpractice.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.dwgg.databindingpractice.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -29,6 +31,10 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        getFragmentManager().beginTransaction()
+                .add(R.id.container, NoteFragment.newInstance())
+                .commit();
     }
 
     @Override

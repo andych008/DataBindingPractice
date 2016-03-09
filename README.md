@@ -1,28 +1,28 @@
 #DataBindingPractice
 
-*Read this in other languages: [简体中文](README.zh-cn.md).*
+*Read this in other languages: [English](README.en.md).*
 
 
-# Table of Contents
+# 目录
    
-  - [Introduction](#intro)
+  - [项目简介](#intro)
   - [TODO](#todo)
 
 --------------
 
  <div id="intro"/>
-## Introduction
+## 项目简介
 
-This is a demo for learning data binding, but it's not too simple to just be a demo.
+这是一个关于data binding的Demo。但又不是简单到只是demo级的东西。
 
-Basic Knowledge: [MasteringAndroidDataBinding](https://github.com/LyndonChin/MasteringAndroidDataBinding) && [Official Docs](https://developer.android.com/tools/data-binding/guide.html)
+基础学习： [MasteringAndroidDataBinding](https://github.com/LyndonChin/MasteringAndroidDataBinding) && [官方教程](https://developer.android.com/intl/zh-cn/tools/data-binding/guide.html)
 
-If you have any questions, please create a *issue*. Of course, you can also *fork* and contribute your codes.
+有相关需求的朋友可以提*issue*，也欢迎*fork*后直接贡献代码。
 
  <div id="todo"/>
 ## TODO
 
-1. init the project to use mvvm。
-1. the simple usage for data binding demo, just bind a string to a view.
-1. data binding for listview
-1. xxx(**features from yours issues**)
+1. 基本框架，并且遵循mvvm。
+1. 最简单的data binding demo，只绑定简单的字符串到界面上。
+1. listview的数据绑定
+1. xxx(根据你的需求来实现，**请提issue**！)
